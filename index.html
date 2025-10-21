@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,9 +16,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+                <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body " data-bs-theme="dark">
                     <div class="container-fluid">
-                        <a  class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="#">
                             <img src="./img/duck.png" alt="Logo" width="50px" height="50px">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,13 +34,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Anagrafica utenti</a>
                                 </li>
-                                  <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" href="#">Storico prestiti</a>
                                 </li>
-                                  <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" href="#">Help</a>
                                 </li>
-                                
+
                             </ul>
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Cerca"
@@ -53,8 +54,117 @@
             </div>
         </div>
     </div>
+    <!-- fine navbar -->
 
-   
+
+    <div class="container py-4 ">
+        <div class="row">
+            <div class="justify-content-start col-6 col-md-6 col-lg-4">
+                <h1>Catalogo Libri</h1>
+            </div>
+            <div class="d-flex justify-content-end col-6 col-md-6 col-lg-4">
+                <button class="btn btn-primary" type="button">Aggiungi libro</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- tabella -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-8">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Titolo</th>
+                            <th class="d-none d-md-block d-lg-block">Data prestito</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I pilastri della terra</td>
+                            <td class="d-none d-md-block d-lg-block">-</td>
+                            <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
+                            <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">I Promessi Sposi</td>
+                            <td class="d-none d-md-block d-lg-block">-</td>
+                            <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
+                            <td><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Il Signore degli anelli</td>
+                            <td class="d-none d-md-block d-lg-block">18/10/2023</td>
+                            <td><span class="badge rounded-pill text-bg-danger">Non disponibile</span></td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                        <tr>
+                            <td scope="row">Harry Potter e la pTetra filosotale</td>
+                            <td class="d-none d-md-block d-lg-block">-</td>
+                            <td><span class="badge rounded-pill text-bg-warning">In prestito</span></td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Il Codice Da Vinci</td>
+                            <td class="d-none d-md-block d-lg-block">25/07/2023</td>
+                            <td><span class="badge rounded-pill text-bg-danger">Non disponibile</span></td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Shining</td>
+                            <td class="d-none d-md-block d-lg-block">-</td>
+                            <td><span class="badge rounded-pill text-bg-warning">In prestito</span></td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td scope="row">La Divina Commedia</td>
+                            <td class="d-none d-md-block d-lg-block">-</td>
+                            <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Il trono dT spade</td>
+                            <td class="d-none d-md-block d-lg-block">21/09/2023</td>
+                            <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Il mondo dT Sofia</td>
+                            <td class="d-none d-md-block d-lg-block">-</td>
+                            <td><span class="badge rounded-pill text-bg-danger">Non disponibile</span></td>
+                            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
